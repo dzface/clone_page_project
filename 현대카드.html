@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    nav{
+        background-color: bisque;
+        height: 50px;
+    }
+    main {
+        background-color: red;
+        min-height: 1000;
+        display: grid;
+        grid-template-columns: 800px 270px;
+        grid-template-rows: 2500px;
+    }
+    aside {
+    background-color: orange;
+    width: 400px;
+    min-height: 2500px;
+    right: 30px;
+    position: absolute;
+
+    }
+    .main-box-container{
+        width: 1080px;
+        display: grid;
+        grid-template-columns: 1000px;
+        grid-template-rows: 500px 20px 500px 500px 980px;
+    }
+    .box-item{
+        background-color: orange;
+        width: 100%;
+        height: 100%;
+        border: 1px solid black;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        box-sizing: border-box;
+    }
+    .topcard-item{
+        background-color: rgb(255, 255, 255);
+        width: 480px;
+        height: 500px;
+    }
+    .card-item{
+        width: 200px;
+        height: 300px;
+        background-color: white;
+    }
+
+</style>
+<body>
+
+    <header>머리</header>
+    <nav>배너 현대홈쇼핑 현대카드 최대 7만 상당 혜택</nav>
+    <main>
+        <aside>
+        </aside>
+        <div class="main-box-container">
+            <div class="box-item">
+                <div class="topcard-item"></div>
+                <div class="topcard-item"></div>
+                <div class="topcard-item"></div>
+            </div>
+            <div class="box-item">
+                <div></div>
+                <div></div>
+            </div>
+            <div>오리지널</div>
+            <div class="box-item">
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+            </div>
+            <div class="box-item"></div>
+            <div>콜라보브랜드</div>
+            <div class="box-item">
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+                <div class="card-item"></div>
+            </div>
+            <div class="box-item"></div>
+
+        </div>
+    </main>
+
+    <footer>꼬리</footer>
+
+</body>
+</html>
