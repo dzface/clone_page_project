@@ -6,9 +6,28 @@
     <title>Document</title>
 </head>
 <style>
+    header {
+        width: 100%;
+        height: 100px;
+        position: fixed;
+        text-align: center;
+        background-color: #ffffff;
+        display: flex;
+        flex-direction: row;
+    }
+    left-header{
+        font-size: large;
+        font-style: bold;
+        margin: 15px;
+    }
+    right-header{
+
+    }
     nav{
         background-color: bisque;
         height: 50px;
+        display: flex;
+
     }
     main {
         background-color: red;
@@ -45,17 +64,38 @@
         background-color: rgb(255, 255, 255);
         width: 480px;
         height: 500px;
+        
     }
     .card-item{
         width: 200px;
         height: 300px;
         background-color: white;
+        display: inline-block;
     }
 
 </style>
 <body>
-
-    <header>머리</header>
+    <header>
+        <div class="right-header">
+        <img src="./image/Hyundai_card_CI_new.png" alt="ci" width="130" height="27">
+        <p>My Account</p>
+        <p>카드</p>
+        <p>혜택</p>
+        <p>금융</p>
+        <p>컬처</p>
+        <p>고객지원</p>
+        <img src="./image/Apple_Pay_logo.svg" alt="ci" width="50" height="25">
+        </div>
+        <div>
+            <p>개인사업자</p>
+            <p>법인</p>
+            <p>가맹점</p>
+            <p>소비자보호 포털</p>
+            <p>상품공시실</p>
+            <div>검색해보세요</div>
+        </div>
+        
+    </header>
     <nav>배너 현대홈쇼핑 현대카드 최대 7만 상당 혜택</nav>
     <main>
         <aside>
