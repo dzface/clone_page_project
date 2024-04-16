@@ -7,20 +7,86 @@ body{
   width: 1460px;
   background-color: red;
 }
-
 header{
   min-height: 65px;
-  background-color: #333;
+  background-color: #fff;
+  display: flex;
+  /* 상하 가운데 정렬 */
+  align-items: center;
+}
+#sort-center {
+  display: flex;
+  flex-direction: row;
+  margin: 0 80px;
+}
+#sort-center p {
+  font-size:bold;
+  margin: 0 30px;
+  background-color: aquamarine;
+}
+div#top-login-menu{
+  display: flex;
+  position: relative;
+  right: -30%;
+  background-color: aquamarine;
+}
+#top-login-menu p {
+  margin: 0 15px
 }
 aside{
   height: 400px;
   background-color:orange;
 }
 nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   height: 108px;
   background-color:orange;
 }
+nav div{
+  width: 103px;
+  height: 97px;
+  margin: 0 10px;
+  background-color: aqua;
+}
+.iconbox{
+  width: 72px;
+  height: 72px;
+  border: 1px solid #333;
+  border-radius: 30%;
+}
+
+.mainbox{
+  width: 366px;
+  height: 473px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  background-color: #fff;
+  margin: 20px;
+}
+main #sort-center{
+  flex-wrap: wrap;
+}
+
+.hire-box{
+  width: 564px;
+  height: 439px;
+  background-color: #fff;
+  margin: 20px;
+}
+
+.apply-box{
+  width: 365px;
+  height: 152px;
+  border: 1px solid #333;
+  border-radius: 15%;
+  background-color: #fff;
+  margin: 20px;
+}
+
 
 /* ul li태그에 리스트 스타일을 없앰 */
 ul li{
