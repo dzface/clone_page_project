@@ -4,15 +4,25 @@
   padding: 0;
 }
 body{
-  width: 1460px;
-  background-color: red;
+  margin: 0 auto;
+  background-color: #fff;
+  
+}
+.container{
+  width: calc(100%);
+  border: 1px solid black;
+  padding: 0 20px;
+  /* auto 좌우 가운데 정렬 */
+  margin:0 auto;
 }
 header{
+  width: 1200px;
   min-height: 65px;
   background-color: #fff;
   display: flex;
   /* 상하 가운데 정렬 */
   align-items: center;
+  margin: 0;
 }
 #sort-center {
   display: flex;
@@ -64,8 +74,16 @@ nav div{
   height: 473px;
   border: 1px solid #333;
   border-radius: 10%;
+  display: flex;
+  justify-content: center;
   background-color: #fff;
   margin: 20px;
+  overflow: hidden;
+}
+.mainbox img{
+  width: 100%;
+  height: 236px;
+  ;
 }
 main #sort-center{
   flex-wrap: wrap;
@@ -74,8 +92,19 @@ main #sort-center{
 .hire-box{
   width: 564px;
   height: 439px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  display: flex;
+  /* 좌우센터 정렬 */
+  justify-content: center;
   background-color: #fff;
   margin: 20px;
+  overflow: hidden;
+}
+.hire-box img{
+  width: auto;
+  height: 250px;
+  background-size: cover;
 }
 
 .apply-box{
@@ -85,6 +114,24 @@ main #sort-center{
   border-radius: 15%;
   background-color: #fff;
   margin: 20px;
+  padding: 24px;
+}
+
+.apply-box div {
+  width: 366px;
+  height: 152px;
+  display: flex;
+  justify-content: left;
+  /* 상하 중앙정렬 */
+  align-content: center;
+  background-color: aqua;
+  overflow: hidden;
+}
+.apply-box div img{
+  border: 1px solid #333;
+  border-radius: 15%;
+  width: 80px;
+  height: 80px;
 }
 
 
