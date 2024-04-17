@@ -1,26 +1,137 @@
 body {
+  position: relative;
+  width: calc(100vh -20px);
   margin: 0;
   padding: 0;
+  background-color: beige;
 }
 
 .container{
-  width: calc(100vh-20px);
-  box-sizing: border-box;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* 줌 상관없이 항상가운데로 */
+  margin: 0 auto;
   background-color: aquamarine;
 }
-
 header {
-  width: 1200px;
   height: 64px;
   display: flex;
-  /* 양쪽 끝 간격 균일하게 정렬 */
-  justify-content: space-evenly;
-  align-content: center;
+  flex-direction: row;
+  /*flex기준 주축정렬 현재 가로 */
+  align-items: center;
+  justify-content: space-between;
+  background-color: aliceblue;
+  
 }
-header :last-child{
-  font-display: flex;
-  height: 66px;
-  padding: 20px;
-  background-color: azure;
+article{
+  width: calc(100vh);
+  min-width: 1200px;
+  height: 430px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  background-color: black;
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  height: 108px;
+  background-color:orange;
+}
+nav div{
+  width: 103px;
+  height: 97px;
+  margin: 0 10px;
+  background-color: aqua;
+}
+main{
+  width: 1200px;
+  height: 2868px;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #fff;
 }
 
+.main-box{
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 좌우 중앙정렬? */
+  justify-content: center;
+}
+.main-item{
+  width: 366px;
+  height: 473px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #fff;
+  margin: 10px;
+  overflow: hidden;
+}
+.main-item img{
+  width: 100%;
+  height: 236px;
+  ;
+}
+
+.hire-box {
+  width: 564px;
+  height: 440px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* 좌우 중앙정렬? */
+  justify-content: center;
+  background-color: rgba(0, 255, 255, 0.178);
+}
+.hire-item{
+  width: 564px;
+  height: 250px;
+  border: 1px solid #333;
+  border-radius: 10%;
+  display: flex;
+  /* 좌우센터 정렬 */
+  justify-content: center;
+  background-color: #fff;
+  margin: 20px;
+  overflow: hidden;
+}
+.hire-item img{
+  width: auto;
+  height: 250px;
+  background-size: cover;
+}
+.hire-section{
+  width: 561px;
+  height: 165px;
+}
+.apply-item{
+  width: 365px;
+  height: 152px;
+  border: 1px solid #333;
+  border-radius: 15%;
+  background-color: #fff;
+  margin: 20px;
+  padding: 24px;
+}
+
+/* id 목록 특정위치가 아닌 기능들은 아이디로만듬 */
+#sort-center {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0px;
+}
+#sort-center p {
+  font-size:bold;
+  margin: 0 30px;
+  background-color: aquamarine;
+}

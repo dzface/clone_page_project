@@ -91,7 +91,7 @@ main #sort-center{
 
 .hire-box{
   width: 564px;
-  height: 439px;
+  height: 250px;
   border: 1px solid #333;
   border-radius: 10%;
   display: flex;
@@ -106,7 +106,10 @@ main #sort-center{
   height: 250px;
   background-size: cover;
 }
-
+.hire-section{
+  width: 561px;
+  height: 165px;
+}
 .apply-box{
   width: 365px;
   height: 152px;
@@ -124,7 +127,7 @@ main #sort-center{
   justify-content: left;
   /* 상하 중앙정렬 */
   align-content: center;
-  background-color: aqua;
+  background-color: rgb(194, 255, 255);
   overflow: hidden;
 }
 .apply-box div img{
@@ -132,6 +135,10 @@ main #sort-center{
   border-radius: 15%;
   width: 80px;
   height: 80px;
+}
+.apply-info-box{
+
+  height: 152px;
 }
 
 
