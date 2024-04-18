@@ -25,6 +25,7 @@ header {
   justify-content: space-between;
   background-color: aliceblue;
 }
+
 article{
   width: 100%;
   min-width: 1200px;
@@ -39,16 +40,35 @@ nav{
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  overflow: visible;
   margin-top: 20px;
   height: 108px;
-  background-color:orange;
 }
 nav div{
   width: 103px;
-  height: 97px;
-  margin: 0 10px;
-  background-color: aqua;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10px;
+  background-color: rgb(255, 255, 255);
 }
+.iconbox{
+  width: 72px;
+  height: 72px;
+  display: flex;
+  /* 좌우 정렬 */
+  justify-content: center;
+  /* 상하 정렬 */
+  align-items: center;
+  border: 1px solid #333;
+  border-radius: 30%;
+  margin-bottom: 10px;
+}
+
+
+
 section{
   /* 여기 auto로 해놓고 내부 calc 먹이니까 밖으로 안나옴 왜인지 모르겠음 */
   width: auto;
@@ -67,8 +87,8 @@ main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  /* 좌우 중앙정렬? */
-  justify-content: center;
+  /* 좌우 중앙정렬 items 는 중앙정렬되는데 content는 안됨 */
+  justify-items: center;
 }
 .main-item{
   width: 366px;
@@ -95,8 +115,12 @@ main{
   flex-direction: row;
   flex-wrap: nowrap;
   /* 좌우 중앙정렬? */
-
+  align-content: space-between;
   background-color: rgba(0, 255, 255, 0.178);
+}
+.hire-box div{
+  /* margin auto로 균형 정렬했음 */
+  margin: auto;
 }
 .hire-item{
   /* 원래 564px */
@@ -138,6 +162,17 @@ main{
 }
 #sort-center p {
   font-size:bold;
-  margin: 0 30px;
+  margin: 0 10px;
   background-color: aquamarine;
+}
+span{
+  width: auto;
+  font-size: 13.5px;
+  letter-spacing:-1px;
+  color: #2c323b;
+}
+a{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
