@@ -110,6 +110,9 @@ main{
   height: 236px;
   ;
 }
+.img-section {
+  height: 10px;
+}
 .hire-box {
   width: 1200px;;
   height: 440px;
@@ -213,4 +216,7 @@ a{
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+hr{
+  width: 100%;
 }
