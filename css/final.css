@@ -1,0 +1,18 @@
+body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 255, 255);
+}
+
+.container{
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  /* 줌 상관없이 항상가운데로 */
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: aquamarine;
+}

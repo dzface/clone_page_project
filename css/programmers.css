@@ -1,10 +1,10 @@
 body {
   position: relative;
-  /* 확대축소 반응형? */
-  width: calc(100vh - 20px);
+  /* 100% 하니까 전체 가운데 정렬 적용됨 */
+  width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(223, 223, 223);
 }
 
 .container{
@@ -13,7 +13,7 @@ body {
   flex-direction: column;
   /* 줌 상관없이 항상가운데로 */
   margin: 0 auto;
-    justify-content: space-between;
+  justify-content: space-between;
   background-color: aquamarine;
 }
 header {
@@ -26,13 +26,13 @@ header {
   background-color: aliceblue;
 }
 article{
-  width: calc(100vw);
+  width: 100%;
   min-width: 1200px;
   height: 430px;
   display: flex;
-  justify-content: center;
+  justify-items: center;
   margin: 0 auto;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
 }
 nav{
   display: flex;
