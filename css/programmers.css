@@ -23,16 +23,23 @@ header {
   flex-direction: row;
   /*flex기준 주축정렬 현재 가로 */
   align-items: center;
-  justify-content: space-between;
+  justify-content: left;
   background-color: greenyellow;
 }
-.dropbox-key{
+.dropbox-key1 ,.dropbox-key2, .dropbox-key3 .dropbox-key4{
   display: flex;
+}
+header div:nth-child(n){
+  margin-right: 60px;
+}
+header div:nth-child(6){
+  display: flex;
+  margin-left: 300px;
 }
 .dropbox-value{
   display: none;
 }
-.dropbox-key:hover ul .dropbox-value{
+.dropbox-key1:hover ul .dropbox-value{
   position: absolute;
   display: block;
   top: 64px;
@@ -40,14 +47,25 @@ header {
   height: 400px;
   background-color: royalblue;
 }
-.dropbox-key:hover .dropbox-value1{
+.dropbox-key2:hover .dropbox-value{
+  position: absolute;
+  display: inline-block;
+  top: 64px;
+  width: 1200px;
+  height: 400px;
+  background-color: rgb(225, 156, 65);
+}
+.dropbox-key3:hover .dropbox-value{
   position: absolute;
   display: block;
   top: 64px;
   width: 1200px;
   height: 400px;
-  background-color: royalblue;
+  background-color: rgb(104, 226, 4);
 }
+.login-section span{
+
+} 
 article{
   width: 100%;
   min-width: 1200px;
