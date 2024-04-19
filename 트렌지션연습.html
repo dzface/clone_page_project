@@ -1,100 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Programmers-like Dropdown Menu</title>
-<style>
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  <style>
+    /* CSS 스타일을 내장시키는 태그입니다. */
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
+    .Slidesbackground {
+      margin: 0;
+      padding: 0;
+      /* .Slidesbackground 클래스에 대한 스타일을 정의합니다. 여백(margin)과 내부 여백(padding)을 0으로 설정합니다. */
+    }
 
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  z-index: 1;
-}
+    .slideshow-image {
+      border-radius: 3%;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      /* .slideshow-image 클래스에 대한 스타일을 정의합니다. 이미지의 모서리를 둥글게 하고, 크기를 조정하며, overflow를 숨깁니다. */
+    }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
+    .mySlides {
+      border-radius: 3%;
+      width: 600px;
+      height: 350px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+      /* .mySlides 클래스에 대한 스타일을 정의합니다. 크기, 플렉스 박스 설정, 그림자 효과 등을 적용합니다. */
+    }
 
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+    .slideshow-container {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      margin: auto;
+      /* .slideshow-container 클래스에 대한 스타일을 정의합니다. 플렉스 박스 설정과 위치, 여백을 조정합니다. */
+    }
 
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-</style>
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+      /* .fade 클래스에 대한 스타일을 정의합니다. 이름이 'fade'인 애니메이션과 그 지속 시간을 설정합니다. */
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+
+      /*'fade' 애니메이션에 대한 키 프레임을 정의합니다. 투명도(opacity)가 0.4에서 1로 변화합니다. */
+    }
+  </style>
 </head>
+
 <body>
+  <!-- 문서의 본문을 나타내는 부분입니다. 실제로 사용자에게 보여지는 내용을 포함합니다. -->
 
-<div class="container">
-  <div class="dropdown">
-    <a href="#">교육</a>
-    <div class="dropdown-content">
-      <a href="#">교육홈</a>
-      <a href="#">강의</a>
-      <a href="#">국비지원</a>
-      <a href="#">MY 스쿨</a>
-      <a href="#">강사신청</a>
-      <a href="#">캠퍼스</a>
+  <span class="slideshow-container">
+    <!-- 슬라이드쇼를 담는 컨테이너로, .slideshow-container 클래스를 적용합니다. -->
+
+    <div class="Slidesbackground">
+      <!-- 슬라이드쇼의 배경을 위한 div 요소, .Slidesbackground 클래스를 적용합니다. -->
+      <!-- 아래의 div 요소들은 각각의 슬라이드를 나타냅니다. -->
+      <!-- 각 슬라이드는 .mySlides 클래스와 .fade 클래스를 적용받으며, 내부에 이미지를 포함합니다. -->
+      <!-- 이미지 소스는 외부 링크를 통해 지정했습니다. -->
+      <div class="mySlides fade">
+        <img
+          src="https://img.freepik.com/free-photo/front-view-man-eating-apple_23-2149857625.jpg?w=2000&t=st=1706761328~exp=1706761928~hmac=8a330bf3db86593f3c36d2b93586755d11a13c0915f4fcfde8b92ff3deb5ad44"
+          class="slideshow-image">
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="https://img.freepik.com/free-photo/front-view-friends-eating-funny-way_23-2150269617.jpg?w=2000&t=st=1706761364~exp=1706761964~hmac=2fe13d3cdac27f390af8e9101355713723c0bdf910267f4acfdf4c3c23e2e240"
+          class="slideshow-image">
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="https://img.freepik.com/free-photo/medium-shot-women-with-delicious-food_23-2150168102.jpg?w=2000&t=st=1706761401~exp=1706762001~hmac=3917990d3db635f5a66a4947f0ae0bf642c2242791fa4795233e5ab8aeeee774"
+          class="slideshow-image">
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="https://img.freepik.com/free-photo/front-view-people-eating-asian-food_23-2150288308.jpg?w=2000&t=st=1706761490~exp=1706762090~hmac=15e449ae7c2f5d47b11168f79fa4369671a7ad8049329c46a667c0fe44307828"
+          class="slideshow-image">
+      </div>
+      <div class="mySlides fade">
+        <img
+          src="https://img.freepik.com/free-photo/young-couple-restaurant_144627-39789.jpg?t=st=1706761490~exp=1706762090~hmac=0604240ab6988cccb5c42666bcfe516569bbf8dee5e56f68ffde7ad5a9b69db6"
+          class="slideshow-image">
+      </div>
+      <div class="mySlides fade">
+        <img src="https://img.freepik.com/free-photo/aged-couple-sitting-table-with-food_23-2147948005.jpg"
+          class="slideshow-image">
+      </div>
     </div>
-  </div>
+  </span>
+  <script>
+    let currentSlideIndex = 0;
+    // 슬라이드의 총 개수를 'totalSlides' 변수에 저장합니다.
+    // 이는 'slides' 배열의 길이를 사용하여 계산됩니다.
+    const slides = document.querySelectorAll(".mySlides");
+    // 슬라이드의 총 개수를 'totalSlides' 변수에 저장합니다.
+    // 이는 'slides' 배열의 길이를 사용하여 계산됩니다.
+    const totalSlides = slides.length;
 
-  <div class="dropdown">
-    <a href="#">채용</a>
-    <div class="dropdown-content">
-      <a href="#">채용 홈</a>
-      <a href="#">채용 공고</a>
-      <a href="#">채용 프로그램</a>
-      <a href="#">탑프로그래머스</a>
-      <a href="#">이력서</a>
-    </div>
-  </div>
+    // 'showSlides'라는 함수를 정의합니다. 이 함수는 슬라이드쇼의 핵심 기능을 담당합니다.
+    function showSlides() {
+      // 'slides' 배열의 모든 요소(슬라이드)를 순회합니다.
+      // 'forEach' 메소드를 사용하여 배열의 각 요소에 대해 함수를 실행합니다.
+      slides.forEach((slide, index) => {
+        // 각 슬라이드에 대해, 현재 슬라이드 인덱스와 일치하는지 확인합니다.
+        // 일치한다면 슬라이드를 보이게 하고 (style.display = 'block'),
+        // 그렇지 않다면 숨깁니다 (style.display = 'none').
+        slide.style.display = (index === currentSlideIndex) ? "block" : "none";
+      });
 
-  <div class="dropdown">
-    <a href="#">코딩테스트</a>
-    <div class="dropdown-content">
-      <a href="#">코딩테스트 문제</a>
-      <a href="#">스킬체크</a>
-      <a href="#">개발자 라운지</a>
-    </div>
-  </div>
+      // 현재 슬라이드 인덱스를 1 증가시킵니다.
+      // '%' 연산자를 사용하여 값이 'totalSlides'의 개수를 초과하지 않도록 합니다.
+      // 이 연산은 슬라이드가 마지막에 도달했을 때 다시 첫 번째 슬라이드로 돌아가도록 합니다.
+      currentSlideIndex = (currentSlideIndex + 1) % totalSlides;
 
-  <div class="dropdown">
-    <a href="#">인증시험</a>
-    <div class="dropdown-content">
-      <a href="#">SQLD</a>
-      <a href="#">SQLP</a>
-      <a href="#">TOEIC</a>
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="dropdown" style="margin-left: auto;">
-    <a href="#">로그인</a>
-  </div>
-
-  <div class="dropdown">
-    <a href="#">기업서비스</a>
-  </div>
-</div>
+      // 'setTimeout' 함수를 사용하여 'showSlides' 함수를 2초(2000밀리초) 후에 다시 호출합니다.
+      // 이는 슬라이드가 자동으로 전환되도록 하는 타이머 역할을 합니다.
+      setTimeout(showSlides, 2000);
+    }
+    // 'showSlides' 함수를 처음 호출하여 슬라이드쇼를 시작합니다.
+    showSlides();
+  </script>
 
 </body>
+
 </html>

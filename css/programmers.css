@@ -24,7 +24,6 @@ header {
   /*flex기준 주축정렬 현재 가로 */
   align-items: center;
   justify-content: left;
-  background-color: greenyellow;
 }
 .dropbox-key1 ,.dropbox-key2, .dropbox-key3 .dropbox-key4{
   display: flex;
@@ -43,29 +42,29 @@ header div:nth-child(6){
   position: absolute;
   display: block;
   top: 64px;
+  right: 0px;
   width: 1200px;
   height: 400px;
-  background-color: royalblue;
+  background-color: white;
 }
 .dropbox-key2:hover .dropbox-value{
   position: absolute;
   display: inline-block;
   top: 64px;
+  right: 0;
   width: 1200px;
   height: 400px;
-  background-color: rgb(225, 156, 65);
+  background-color: white;
 }
 .dropbox-key3:hover .dropbox-value{
   position: absolute;
   display: block;
   top: 64px;
+  right: 0;
   width: 1200px;
   height: 400px;
-  background-color: rgb(104, 226, 4);
+  background-color: white;
 }
-.login-section span{
-
-} 
 article{
   width: 100%;
   min-width: 1200px;
