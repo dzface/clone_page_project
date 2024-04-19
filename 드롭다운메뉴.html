@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+body, ul, li{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding: 0;
+  /* list-style: none; */
+
+}
+.container{
+  display: flex;
+  justify-items: center;
+  width: calc(100vw);
+
+  background-color: orange;
+}
+header{
+  width: 1200px;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  background-color: aquamarine;
+}
+.dropbox-key{
+
+}
+.dropbox-value{
+display: none;
+}
+.dropbox-key:hover .dropbox-value{
+  position: absolute;
+  display: block;
+  top: 60px;
+  width: 1200px;
+  height: 400px;
+  background-color: royalblue;
+}
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <div class="dropbox-key">
+        <ul>
+          <li>교육</li>
+          <ul class="dropbox-value">
+            <li>강의</li>
+            <ul>
+              <li>전체</li>
+              <li>추천강의</li>
+              <li>데브코스</li>
+            </ul>
+          </ul>
+        </ul>
+      </div>
+      
+    </header>
+  </div>
+</body>
+
+</html>

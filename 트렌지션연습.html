@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Programmers-like Dropdown Menu</title>
+<style>
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+  <div class="dropdown">
+    <a href="#">교육</a>
+    <div class="dropdown-content">
+      <a href="#">교육홈</a>
+      <a href="#">강의</a>
+      <a href="#">국비지원</a>
+      <a href="#">MY 스쿨</a>
+      <a href="#">강사신청</a>
+      <a href="#">캠퍼스</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">채용</a>
+    <div class="dropdown-content">
+      <a href="#">채용 홈</a>
+      <a href="#">채용 공고</a>
+      <a href="#">채용 프로그램</a>
+      <a href="#">탑프로그래머스</a>
+      <a href="#">이력서</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">코딩테스트</a>
+    <div class="dropdown-content">
+      <a href="#">코딩테스트 문제</a>
+      <a href="#">스킬체크</a>
+      <a href="#">개발자 라운지</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">인증시험</a>
+    <div class="dropdown-content">
+      <a href="#">SQLD</a>
+      <a href="#">SQLP</a>
+      <a href="#">TOEIC</a>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="dropdown" style="margin-left: auto;">
+    <a href="#">로그인</a>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">기업서비스</a>
+  </div>
+</div>
+
+</body>
+</html>

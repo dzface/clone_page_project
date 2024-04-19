@@ -14,8 +14,10 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   background-color: aquamarine;
+  list-style: none;
 }
 header {
+  position: relative;
   height: 64px;
   display: flex;
   flex-direction: row;
@@ -24,18 +26,6 @@ header {
   justify-content: space-between;
   background-color: greenyellow;
 }
-.header-menu{
-  display: none;
-  
-}
-.header:hover ~.container .header-menu{
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 500px;
-  background-color: royalblue;
-}
-
 
 
 
