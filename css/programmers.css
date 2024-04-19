@@ -14,7 +14,7 @@ body {
   margin: 0 auto;
   justify-content: space-between;
   background-color: aquamarine;
-  list-style: none;
+  /* 리스트 기본스타일 제거 */
 }
 header {
   position: relative;
@@ -26,9 +26,28 @@ header {
   justify-content: space-between;
   background-color: greenyellow;
 }
-
-
-
+.dropbox-key{
+  display: flex;
+}
+.dropbox-value{
+  display: none;
+}
+.dropbox-key:hover ul .dropbox-value{
+  position: absolute;
+  display: block;
+  top: 64px;
+  width: 1200px;
+  height: 400px;
+  background-color: royalblue;
+}
+.dropbox-key:hover .dropbox-value1{
+  position: absolute;
+  display: block;
+  top: 64px;
+  width: 1200px;
+  height: 400px;
+  background-color: royalblue;
+}
 article{
   width: 100%;
   min-width: 1200px;
@@ -36,8 +55,7 @@ article{
   display: flex;
   justify-items: center;
   margin: 0 auto;
-  /* 잠시 뮤트 */
-  /* background-color: rgb(0, 0, 0); */
+  background-color: rgb(0, 0, 0);
 }
 nav{
   display: flex;
