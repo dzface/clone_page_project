@@ -184,31 +184,18 @@
     </header>
   </div>
   <article>
-    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
-        <div class="carousel-item">
-          <img src="..." class="d-block w-100" alt="...">
-        </div>
+    <div class="slideshow-container">
+      <div class="slides">
+        <img src="./image/main_banner1.png" class="slide">
+        <img src="./image/main_banner2.png" class="slide">
+        <img src="./image/main_banner3.png" class="slide">
+        <img src="./image/main_banner4.png" class="slide">
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+      <a class="next" onclick="moveSlide(1)">&#10095;</a>
     </div>
   </article>
-  <div class="container">메인컨테이너
+  <div class="container">
     <nav> 네비
       <div>
         <a href="https://school.programmers.co.kr/learn/KDT">
@@ -516,7 +503,30 @@
     </footer>
   </div>
 
+<script>
+  let slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  const slides = document.getElementsByClassName("slide");
+  
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+
+  slides[slideIndex-1].style.display = "block";
+
+  setTimeout(showSlides, 5000); // 5초마다 슬라이드 전환
+}
+
+function moveSlide(n) {
+  slideIndex += n;
+  showSlides();
+}
+</script>
 
 
 </body>
