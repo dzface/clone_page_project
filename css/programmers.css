@@ -125,7 +125,7 @@ nav div {
   justify-content: center;
   /* 상하 정렬 */
   align-items: center;
-  border: 1px solid #333;
+  border: 1px solid grey;
   border-radius: 30%;
   margin-bottom: 10px;
 }
