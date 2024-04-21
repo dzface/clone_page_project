@@ -1,13 +1,8 @@
 
-ul{
-  text-align: left;
-}
 ul li{
   text-align: left;
 }
-ul ul ul li{
-  text-align: left;
-}
+
 body {
   position: relative;
   /* 100% 하니까 전체 가운데 정렬 적용됨 */
@@ -22,8 +17,6 @@ body {
   /* 줌 상관없이 항상가운데로 */
   margin: 0 auto;
   justify-content: space-between;
-  background-color: aquamarine;
-  /* 리스트 기본스타일 제거 */
 }
 header {
   position: relative;
@@ -37,18 +30,21 @@ header {
 .dropbox-key1 ,.dropbox-key2, .dropbox-key3, .dropbox-key4{
   height: max-content;
   display: flex;
-}
-.dropbox-key1 ,.dropbox-key2, .dropbox-key3, .dropbox-key4 > ul {
   line-height: 4;
-  
 }
-
+.dropbox-value ul:nth-child(1) {
+  font-size: 100px;
+}
 header div:nth-child(n){
   margin-right: 60px;
 }
+/* login-section */
+.login-section span{
+  margin: 0 20px;
+}
 header div:nth-child(6){
   display: flex;
-  margin-left: 300px;
+  margin-left: 230px;
 }
 .dropbox-value{
   display: none;
@@ -63,7 +59,6 @@ header div:nth-child(6){
   right: 0px;
   width: 1200px;
   height: 400px;
-  
   background-color: white;
 }
 .dropbox-key2:hover .dropbox-value{
@@ -271,7 +266,15 @@ a{
   flex-direction: column;
   text-align: center;
   text-decoration-line: none;
+  
 }
+a :link{
+  color: black;
+}
+a :visited{
+  color: black;
+}
+
 hr{
   width: 100%;
 }
