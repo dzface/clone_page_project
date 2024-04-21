@@ -1,5 +1,4 @@
-
-ul li{
+ul li {
   text-align: left;
 }
 
@@ -10,7 +9,8 @@ body {
   margin: 0;
   padding: 0;
 }
-.container{
+
+.container {
   width: 1200px;
   display: flex;
   flex-direction: column;
@@ -18,6 +18,7 @@ body {
   margin: 0 auto;
   justify-content: space-between;
 }
+
 header {
   position: relative;
   height: 64px;
@@ -27,29 +28,39 @@ header {
   align-items: center;
   justify-content: left;
 }
-.dropbox-key1 ,.dropbox-key2, .dropbox-key3, .dropbox-key4{
+
+.dropbox-key1,
+.dropbox-key2,
+.dropbox-key3,
+.dropbox-key4 {
   height: max-content;
   display: flex;
   line-height: 4;
 }
+
 .dropbox-value ul:nth-child(1) {
   font-size: 100px;
 }
-header div:nth-child(n){
+
+header div:nth-child(n) {
   margin-right: 60px;
 }
+
 /* login-section */
-.login-section span{
+.login-section span {
   margin: 0 20px;
 }
-header div:nth-child(6){
+
+header div:nth-child(6) {
   display: flex;
-  margin-left: 230px;
+  margin-left: 200px;
 }
-.dropbox-value{
+
+.dropbox-value {
   display: none;
 }
-.dropbox-key1:hover .dropbox-value{
+
+.dropbox-key1:hover .dropbox-value {
   z-index: 1;
   line-height: 1;
   position: absolute;
@@ -61,7 +72,8 @@ header div:nth-child(6){
   height: 400px;
   background-color: white;
 }
-.dropbox-key2:hover .dropbox-value{
+
+.dropbox-key2:hover .dropbox-value {
   line-height: 1;
   position: absolute;
   display: inline-block;
@@ -71,7 +83,8 @@ header div:nth-child(6){
   height: 400px;
   background-color: white;
 }
-.dropbox-key3:hover .dropbox-value{
+
+.dropbox-key3:hover .dropbox-value {
   line-height: 1;
   position: absolute;
   display: inline-block;
@@ -83,7 +96,7 @@ header div:nth-child(6){
   background-color: white;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -92,8 +105,9 @@ nav{
   margin-top: 20px;
   height: 108px;
 }
-nav div{
-  width: 103px;
+
+nav div {
+  width: 120px;
   height: 105px;
   display: flex;
   flex-direction: column;
@@ -102,7 +116,8 @@ nav div{
   margin: auto 10px;
   background-color: rgb(255, 255, 255);
 }
-.iconbox{
+
+.iconbox {
   width: 72px;
   height: 72px;
   display: flex;
@@ -115,12 +130,14 @@ nav div{
   margin-bottom: 10px;
 }
 
-section{
+section {
   /* 여기 auto로 해놓고 내부 calc 먹이니까 밖으로 안나옴 왜인지 모르겠음 */
   width: auto;
+  margin-top: 80px;
 
 }
-main{
+
+main {
   width: 1200px;
   height: 2868px;
   flex-flow: column nowrap;
@@ -128,7 +145,7 @@ main{
   background-color: #fff;
 }
 
-.main-box{
+.main-box {
   position: relative;
   /* width는 vw height는 vh 기억, 여기 20px 주면 왜 반응 안되는지 모르겠음 */
   width: calc(100vw);
@@ -140,7 +157,8 @@ main{
   overflow: visible;
   padding: 0 0;
 }
-.main-item{
+
+.main-item {
   width: 366px;
   height: 473px;
   border: 1px solid #333;
@@ -148,21 +166,59 @@ main{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content:center;
+  justify-content: center;
   background-color: #fff;
   overflow: hidden;
   margin: 10px;
 }
-.main-item img{
+
+.main-item img {
   width: 100%;
   height: 236px;
   ;
 }
+
+.item-info {
+  padding: 30px;
+}
+
+.item-info p {
+  font-size: 16px;
+}
+.item-info hr{
+  margin-bottom: 20px;
+}
+.item-info div{
+  display: flex;
+}
+.item-info div p{
+  font-size: 12px;
+  border-radius: 10%;
+  padding: 5px;
+  margin: 20px 10px 30px 0;
+}
+.item-info div p:nth-child(1) {
+  width: 300;
+  font-weight:bolder ;
+  color: #667380;
+  background-color: #dce1e5;
+}
+.item-info div p:nth-child(2) {
+  color: #ff850a;
+  background-color: #fff7de;
+}
+.item-info div p:nth-child(3) {
+  color: #3ab037;
+  background-color: #ebfae8;
+}
+
 .img-section {
   height: 10px;
 }
+
 .hire-box {
-  width: 1200px;;
+  width: 1200px;
+  ;
   height: 440px;
   display: flex;
   flex-direction: row;
@@ -172,11 +228,13 @@ main{
 
   background-color: rgba(0, 0, 0, 0.178);
 }
-.hire-box div{
+
+.hire-box div {
   /* margin auto로 균형 정렬했음 */
   margin: auto;
 }
-.hire-item{
+
+.hire-item {
   /* 원래 564px */
   width: 564px;
   height: 250px;
@@ -189,16 +247,19 @@ main{
   margin: 20px;
   overflow: hidden;
 }
-.hire-item img{
+
+.hire-item img {
   width: auto;
   height: 250px;
   background-size: cover;
 }
-.hire-section{
+
+.hire-section {
   width: 561px;
   height: 165px;
 }
-.apply-item{
+
+.apply-item {
   /* 365 */
   width: 320px;
   height: 152px;
@@ -213,68 +274,99 @@ main{
   margin: 10px;
   padding: 24px;
 }
-.apply-item img{
+
+.apply-item img {
   width: 80px;
   height: 80px;
 }
-.apply-text-section{
+
+.apply-text-section {
   background-color: aquamarine;
 }
 
-footer{
+footer {
   height: auto;
   text-align: left;
   margin: 4px 0px 64px;
   padding: 0 20px;
 
 }
-footer div{
+
+footer div {
   display: flex;
   flex-wrap: nowrap;
 }
-footer div:nth-child(2){
+
+footer div ul {
+  line-height: 30px;
+  margin-right: 60px;
+}
+
+footer div:nth-child(2) {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
 }
+
 footer div:nth-child(2) span:nth-child(2) {
   width: 900px;
+  line-height: 20px;
 }
-footer div:nth-child(3){
+
+footer div:nth-child(3) {
   margin-top: 24px;
+}
+
+.footer-section3 a:nth-child(-n +3) {
+  display: flex;
+  margin-right: 30px;
+}
+
+.icon-link {
+  margin-left: 560px;
+}
+
+.footer-section3 div a {
+  display: flex;
+  margin-right: 30px;
 }
 
 /* id 목록 특정위치가 아닌 기능들은 아이디로만듬 */
 #sort-center {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin: 0 0px;
 }
-#sort-center p {
-  font-size:bold;
+
+#sort-center>p {
+  font-size: 22px;
   margin: 0 10px;
-  background-color: aquamarine;
 }
-span{
+
+span {
   width: auto;
-  font-size: 13.5px;
-  letter-spacing:-1px;
+  font-size: 16px;
+  letter-spacing: -1px;
   color: #2c323b;
 }
-a{
+
+a {
   display: flex;
   flex-direction: column;
   text-align: center;
   text-decoration-line: none;
-  
+
 }
-a :link{
-  color: black;
-}
-a :visited{
+
+a :link {
   color: black;
 }
 
-hr{
+a :visited {
+  color: black;
+}
+
+hr {
   width: 100%;
 }
