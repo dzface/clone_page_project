@@ -4,31 +4,61 @@ window.onload = function () {
     const slideLis = slider.querySelectorAll('li')
     const moveButton = kindWrap.querySelector('.arrow');
 
-    /* ul 넓이 계산해 주기 */
+    /* 클론 */
+    const clone1 = slideLis[0].cloneNode(true);
+    const cloneLast = slideLis[slideLis.length - 1].cloneNode(true);
+    slider.insertBefore(cloneLast, slideLis[0]);
+    slider.appendChild(clone1);
+
+    /* 주요 변수 초기화 */
+    let currentIdx = 0;
+    let translate = 0;
+    const speedTime = 500;
+
+    /* CSSOM 셋업 */
+    const sliderCloneLis = slider.querySelectorAll('li');
     const liWidth = slideLis[0].clientWidth;
-    const sliderWidth = liWidth * slideLis.length;
+    const sliderWidth = liWidth * sliderCloneLis.length;
     slider.style.width = `${sliderWidth}px`;
+    currentIdx = 1;
+    translate = -liWidth;
+    slider.style.transform = `translateX(${translate}px)`
 
     /* 리스너 설치하기 */
-    let currentIdx = 0; // 슬라이드 현재 번호
-    let translate = 0; // 슬라이드 위치 값
     moveButton.addEventListener('click', moveSlide);
 
+    /* 슬라이드 실행 */
+    function move(D) {
+        currentIdx += (-1 * D);
+        translate += liWidth * D;
+        slider.style.transform = `translateX(${translate}px)`;
+        slider.style.transition = `all ${speedTime}ms ease`
+    }
+
+    /* 클릭 버튼 */
     function moveSlide(event) {
         event.preventDefault();
         if (event.target.className === 'next') {
-            if (currentIdx !== slideLis.length - 1) {
-                translate -= liWidth;
-                slider.style.transform = `translateX(${translate}px)`;
-                currentIdx += 1;
-            }
-        } else if (event.target.className === 'prev') {
-            if (currentIdx !== 0) {
-                translate += liWidth;
-                slider.style.transform = `translateX(${translate}px)`;
-                currentIdx -= 1;
+            move(-1);
+            if (currentIdx === sliderCloneLis.length - 1)
+                setTimeout(() => {
+                    slider.style.transition = 'none';
+                    currentIdx = 1;
+                    translate = -liWidth;
+                    slider.style.transform = `translateX(${translate}px)`;
+                }, speedTime);
+        } else {
+            move(1);
+            if (currentIdx === 0) {
+                setTimeout(() => {
+                    slider.style.transition = 'none';
+                    currentIdx = sliderCloneLis.length - 2;
+                    translate = -(liWidth * currentIdx);
+                    slider.style.transform = `translateX(${translate}px)`;
+                }, speedTime);
             }
         }
     }
+    
 
 }
