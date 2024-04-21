@@ -1,7 +1,9 @@
+
+
 body {
   position: relative;
   /* 100% 하니까 전체 가운데 정렬 적용됨 */
-  width: 100%;
+  /* width: 100%; */
   margin: 0;
   padding: 0;
 }
@@ -66,12 +68,12 @@ header div:nth-child(6){
 }
 article{
   width: 100%;
-  height: 430px;
   display: flex;
   justify-items: center;
   margin: 0 auto;
-  background-color: black;
+  /* background-color: black; */
 }
+
 nav{
   display: flex;
   flex-direction: row;

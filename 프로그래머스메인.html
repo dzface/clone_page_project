@@ -15,7 +15,8 @@
   </div>
   <div class="container">
     <header>
-      <div> <a href="https://programmers.co.kr/"><img width="200px" height="50px" src="./programmers_image/programmers-logo-dark.png" alt="CI"></a></div>
+      <div> <a href="https://programmers.co.kr/"><img width="200px" height="50px"
+            src="./programmers_image/programmers-logo-dark.png" alt="CI"></a></div>
       <div class="dropbox-key1">
         <ul>
           <a href="https://school.programmers.co.kr/">
@@ -179,7 +180,8 @@
         </ul>
       </div>
       <div class="login-section">
-        <span><a href="https://programmers.co.kr/account/sign_in">로그인</a></span><span><a href="https://business.programmers.co.kr/">기업 서비스</a></span>
+        <span><a href="https://programmers.co.kr/account/sign_in">로그인</a></span><span><a
+            href="https://business.programmers.co.kr/">기업 서비스</a></span>
       </div>
     </header>
   </div>
@@ -503,30 +505,30 @@
     </footer>
   </div>
 
-<script>
-  let slideIndex = 0;
-showSlides();
+  <script>
+    let slideIndex = 0;
+    showSlides();
 
-function showSlides() {
-  const slides = document.getElementsByClassName("slide");
-  
-  for (let i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
+    function showSlides() {
+      const slides = document.getElementsByClassName("slide");
 
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
 
-  slides[slideIndex-1].style.display = "block";
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
 
-  setTimeout(showSlides, 5000); // 5초마다 슬라이드 전환
-}
+      slides[slideIndex - 1].style.display = "block";
 
-function moveSlide(n) {
-  slideIndex += n;
-  showSlides();
-}
-</script>
+      setTimeout(showSlides, 5000); // 5초마다 슬라이드 전환
+    }
+
+    function moveSlide(n) {
+      slideIndex += n;
+      showSlides();
+    }
+  </script>
 
 
 </body>
