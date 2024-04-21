@@ -1,5 +1,13 @@
 
-
+ul{
+  text-align: left;
+}
+ul li{
+  text-align: left;
+}
+ul ul ul li{
+  text-align: left;
+}
 body {
   position: relative;
   /* 100% 하니까 전체 가운데 정렬 적용됨 */
@@ -26,9 +34,15 @@ header {
   align-items: center;
   justify-content: left;
 }
-.dropbox-key1 ,.dropbox-key2, .dropbox-key3 .dropbox-key4{
+.dropbox-key1 ,.dropbox-key2, .dropbox-key3, .dropbox-key4{
+  height: max-content;
   display: flex;
 }
+.dropbox-key1 ,.dropbox-key2, .dropbox-key3, .dropbox-key4 > ul {
+  line-height: 4;
+  
+}
+
 header div:nth-child(n){
   margin-right: 60px;
 }
@@ -39,16 +53,21 @@ header div:nth-child(6){
 .dropbox-value{
   display: none;
 }
-.dropbox-key1:hover ul .dropbox-value{
+.dropbox-key1:hover .dropbox-value{
+  z-index: 1;
+  line-height: 1;
   position: absolute;
-  display: block;
+  display: inline-block;
+  text-align: left;
   top: 64px;
   right: 0px;
   width: 1200px;
   height: 400px;
+  
   background-color: white;
 }
 .dropbox-key2:hover .dropbox-value{
+  line-height: 1;
   position: absolute;
   display: inline-block;
   top: 64px;
@@ -58,8 +77,10 @@ header div:nth-child(6){
   background-color: white;
 }
 .dropbox-key3:hover .dropbox-value{
+  line-height: 1;
   position: absolute;
-  display: block;
+  display: inline-block;
+  justify-content: left;
   top: 64px;
   right: 0;
   width: 1200px;
