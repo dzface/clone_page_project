@@ -7,6 +7,7 @@
   <!-- 모든 기본 요소 제거 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/programmers.css">
+  <link rel="stylesheet" href="./css/article.css">
   <title>Document</title>
 </head>
 
@@ -186,15 +187,19 @@
     </header>
   </div>
   <article>
-    <div class="slideshow-container">
-      <div class="slides">
-        <img src="./image/main_banner1.png" class="slide">
-        <img src="./image/main_banner2.png" class="slide">
-        <img src="./image/main_banner3.png" class="slide">
-        <img src="./image/main_banner4.png" class="slide">
+    <div class="kind_wrap">
+      <div class="kind_slider">
+        <ul class="slider">
+            <li><img src="./image/main_banner1.png" alt=""></li>
+            <li><img src="./image/main_banner2.png" alt=""></li>
+            <li><img src="./image/main_banner3.png" alt=""></li>
+            <li><img src="./image/main_banner4.png" alt=""></li>
+        </ul>
       </div>
-      <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
-      <a class="next" onclick="moveSlide(1)">&#10095;</a>
+      <div class="arrow">
+          <a href="" class="prev">이전</a>
+          <a href="" class="next">다음</a>
+      </div>
     </div>
   </article>
   <div class="container">
@@ -504,33 +509,7 @@
       </div>
     </footer>
   </div>
-
-  <script>
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-      const slides = document.getElementsByClassName("slide");
-
-      for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-      }
-
-      slideIndex++;
-      if (slideIndex > slides.length) { slideIndex = 1 }
-
-      slides[slideIndex - 1].style.display = "block";
-
-      setTimeout(showSlides, 5000); // 5초마다 슬라이드 전환
-    }
-
-    function moveSlide(n) {
-      slideIndex += n;
-      showSlides();
-    }
-  </script>
-
-
+  <script src="article.js"></script>
 </body>
 
 </html>

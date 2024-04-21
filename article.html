@@ -4,69 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <!-- 모든 기본 요소 제거 -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    <!-- <link rel="stylesheet" href="./css/programmers.css"> -->
+    <link rel="stylesheet" href="./css/programmers.css">
     <title>Document</title>
-    <style>
-        #container {
-            width: 1200px;
-            margin: 0 auto;
-        }
-
-        .img-item {
-            background-size: cover;
-            width: 100%;
-            height: 450px;
-        }
-
-        .img-1 {
-            background-image: url(./image/main_banner1.png);
-        }
-
-        .img-2 {
-            background-image: url(./image/main_banner2.png);
-        }
-
-        .img-3 {
-            background-image: url(./image/main_banner3.png);
-        }
-
-        .img-4 {
-            background-image: url(./image/main_banner4.png);
-        }
-    </style>
 </head>
 
 <body>
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="./image/main_banner1.png" class="d-block w-100" alt="...">
+    <article>
+        <div class="carousel-container" style="width: 1200px; height: 430px;">
+            <div class="carousel-slides">
+                <img src="./image/main_banner1.png" class="slide">
+                <img src="./image/main_banner2.png" class="slide">
+                <img src="./image/main_banner3.png" class="slide">
+                <img src="./image/main_banner4.png" class="slide">
             </div>
-            <div class="carousel-item">
-                <img src="./image/main_banner2.png" class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-                <img src="./image/main_banner3.png" class="d-block w-100" alt="...">
-            </div>
+            <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+            <a class="next" onclick="moveSlide(1)">&#10095;</a>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
+    </article>
+    <script>
+        let slideIndex = 0;
+        showSlides();
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-        crossorigin="anonymous"></script>
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            setTimeout(showSlides, 5000); // 5초마다 슬라이드 전환
+        }
+
+        function moveSlide(n) {
+            showSlides(slideIndex += n);
+            clearInterval(slideInterval); // 슬라이드 전환 시간 초기화
+            slideInterval = setInterval(moveSlideAuto, 5000); // 5초마다 슬라이드 전환
+        }
+    </script>
 </body>
 
 </html>
