@@ -109,12 +109,14 @@ nav {
 nav div {
   width: 120px;
   height: 105px;
+  margin: auto 10px;
+  background-color: rgb(255, 255, 255);
+}
+nav div a{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto 10px;
-  background-color: rgb(255, 255, 255);
 }
 
 .iconbox {
@@ -127,7 +129,7 @@ nav div {
   align-items: center;
   border: 1px solid grey;
   border-radius: 30%;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 section {
@@ -236,7 +238,7 @@ main {
   /* 원래 564px */
   width: 564px;
   height: 250px;
-  border-radius: 10%;
+  border-radius: 3%;
   display: flex;
   /* 좌우센터 정렬 */
   justify-content: center;
@@ -273,7 +275,7 @@ main {
   /* 상하 정렬 */
   align-items: center;
   border: 1px solid #333;
-  border-radius: 15%;
+  border-radius: 10%;
 
   background-color: #fff;
   margin: 10px;
@@ -283,12 +285,27 @@ main {
 .apply-item img {
   width: 80px;
   height: 80px;
+  border-radius: 10%;
 }
 
 .apply-text-section {
-  background-color: aquamarine;
+  margin: 15px;
 }
-
+.apply-text-section p:nth-child(1){
+  font-size: 16px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+.apply-text-section p:nth-child(2){
+  font-size: 14px;
+  margin: 20px 0;
+}
+.apply-text-section p:nth-child(3){
+  font-size: 14px;
+  color: #667380;
+  align-items:baseline;
+  margin: 20px 0;
+}
 footer {
   height: auto;
   text-align: left;
