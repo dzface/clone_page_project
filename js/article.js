@@ -59,6 +59,4 @@ window.onload = function () {
             }
         }
     }
-    
-
 }

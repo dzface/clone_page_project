@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container{
+      width: 1200px;
+      height: 500px;
+      margin: 0 auto;
+    }
+    .dropbox-key{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid;
+    }
+    .dropbox-key p{
+      width: 100px;
+      text-align: center;
+      border: 1px solid;
+      margin: 0 10px;
+    }
+    .dropbox-value1{
+      position: absolute;
+      width: 1200px;
+      height: 500px;
+      display: none;
+      background-color: black;
+    }
+    .dropbox-key:nth-child(1):hover ~.dropbox-value1{
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="dropbox-key">
+      <p>교육</p>
+      <p>채용</p>
+      <p>코딩 테스트</p>
+      <p>인증 시험</p>
+    </div>
+    <div class="dropbox-value1">
+      <div>
+        <ul>
+          <li>교육홈</li>
+          <li>
+            강의
+            <ul>
+              <li>전체</li>
+              <li>추천강의</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div></div>
+      <div></div>
+      <ul></ul>
+    </div>
+  </div>
+  
+</body>
+
+</html>
