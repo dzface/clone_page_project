@@ -1,0 +1,60 @@
+header {
+  position: relative;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  /*flex기준 주축정렬 현재 가로 */
+  align-items: center;
+  justify-content: left;
+}
+.menubar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menubar p {
+  display: block;
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  align-content: center;
+  border: 1px solid;
+  margin: 0 20px;
+}
+
+.dropbox-value1, .dropbox-value2, .dropbox-value3, .dropbox-value4 {
+  width: 1200px;
+  right: 0px;
+  top: 64px;
+  height: 400px;
+  position: absolute;
+  display: none;
+}
+.dropbox-value1 div, .dropbox-value2 div, .dropbox-value3 div, .dropbox-value4 div {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+.menubar a:nth-child(2):hover ~.dropbox-value1{
+  display: flex;
+  justify-content: left;
+  z-index: 1;
+  line-height: 1;
+  background-color: aquamarine;
+}
+.menubar a:nth-child(3):hover ~.dropbox-value2{
+  display: flex;
+  justify-content: left;
+  z-index: 1;
+  background-color: red;
+}
+.menubar a:nth-child(4):hover ~.dropbox-value3{
+  display: flex;
+  justify-content: left;
+  z-index: 1;
+  background-color: blue;
+}
+.menubar a:nth-child(6){
+  margin-left: 180px;
+}

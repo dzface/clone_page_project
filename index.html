@@ -7,6 +7,7 @@
   <!-- 모든요소 기본값 제거 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="./css/programmers.css">
+  <link rel="stylesheet" href="./css/header.css">
   <link rel="stylesheet" href="./css/article.css">
   <title>Document</title>
 </head>
@@ -14,175 +15,194 @@
 <body>
   <div class="container">
     <header>
-      <div> <a href="https://programmers.co.kr/"><img width="200px" height="50px"
-            src="./programmers_image/programmers-logo-dark.png" alt="CI"></a></div>
-      <div class="dropbox-key1">
-        <ul>
-          <a href="https://school.programmers.co.kr/">
-            <li>교육</li>
-          </a>
-          <ul class="dropbox-value">
-            <a href="https://school.programmers.co.kr/">
-              <li>교육홈</li>
-            </a>
-            <a href="https://school.programmers.co.kr/learn">
-              <li>강의</li>
-            </a>
-            <ul>
-              <a href="https://school.programmers.co.kr/learn?tag=%EC%A0%84%EC%B2%B4">
-                <li>전체</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn?tag=%EC%B6%94%EC%B2%9C%20%EA%B0%95%EC%9D%98">
-                <li>추천강의</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn?tag=%EB%8D%B0%EB%B8%8C%EC%BD%94%EC%8A%A4">
-                <li>데브코스</li>
-              </a>
-              <a
-                href="https://school.programmers.co.kr/learn?tag=%EC%98%81%EC%83%81/%EC%8B%A4%EC%8A%B5%20%EA%B0%95%EC%9D%98">
-                <li>영상/실습강의</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn?tag=PCCP.E%20%EC%9E%90%EA%B2%A9%EC%A6%9D">
-                <li>PECCP.E자격증 </li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn?tag=%EC%84%B8%EB%AF%B8%EB%82%98">
-                <li>세미나</li>
-              </a>
-            </ul>
-            <a href="https://school.programmers.co.kr/learn/KDT">
-              <li>국비지원 무료</li>
-            </a>
-            <ul>
-              <a href="https://school.programmers.co.kr/learn/KDT">
-                <li>데브코스</li>
-              </a>
-            </ul>
-            <a href="https://school.programmers.co.kr/my-courses/learning">
-              <li>My 스쿨</li>
-            </a>
-            <ul>
-              <a href="https://school.programmers.co.kr/my-courses/learning">
-                <li>수강중인 코스</li>
-              </a>
-              <a href="https://school.programmers.co.kr/my-courses/management">
-                <li>관리중인 코스</li>
-              </a>
-            </ul>
-            <a href="https://school.programmers.co.kr/apply-lecturer">
-              <li>강사신청</li>
-            </a>
-            <ul>
-              <a href="https://school.programmers.co.kr/apply-lecturer">
-                <li>강사/멘토풀등록</li>
-              </a>
-            </ul>
-            <a href="https://campus.programmers.co.kr/my-courses/learning">
-              <li>캠퍼스</li>
-            </a>
-          </ul>
-        </ul>
-      </div>
-      <div class="dropbox-key2">
-        <ul>
-          <a href="https://career.programmers.co.kr/">
-            <li>채용</li>
-          </a>
-          <ul class="dropbox-value">
-            <a href="https://career.programmers.co.kr/">
-              <li>채용 홈</li>
-            </a>
-            <a href="https://career.programmers.co.kr/job">
-              <li>채용 공고</li>
-            </a>
-            <ul>
-              <a href="https://career.programmers.co.kr/job">
-                <li>채용 공고</li>
-              </a>
-              <a href="https://career.programmers.co.kr/job_profile_offers">
-                <li>받은 제안</li>
-              </a>
-              <a href="https://career.programmers.co.kr/job_applications">
-                <li>지원한 포지션</li>
-              </a>
-              <a href="https://career.programmers.co.kr/job_position_bookmarks">
-                <li>북마크한 포지션</li>
-              </a>
-            </ul>
-            </li>
-            <a href="https://career.programmers.co.kr/competitions">
-              <li>채용 프로그램</li>
-            </a>
-            <ul>
-              <a href="https://career.programmers.co.kr/competitions">
-                <li>채용 프로그램</li>
-              </a>
-              <a href="https://career.programmers.co.kr/registrations">
-                <li>접수한 채용 프로그램</li>
-              </a>
-            </ul>
-            </li>
-            <a href="https://career.programmers.co.kr/top_programmers/introduce">
-              <li>탑프로그래머스</li>
-            </a>
-            <a href="https://career.programmers.co.kr/resumes">
-              <li>이력서</li>
-            </a>
-          </ul>
-        </ul>
-      </div>
-      <div class="dropbox-key3">
-        <ul>
-          <a href="https://school.programmers.co.kr/learn/challenges?order=recent&languages=oracle">
-            <li>코딩 테스트</li>
-          </a>
-          <ul class="dropbox-value">
-            <a href="https://school.programmers.co.kr/learn/challenges?order=recent&languages=oracle">
-              <li>코딩테스트 문제</li>
-            </a>
-            <ul>
-              <a href="https://school.programmers.co.kr/learn/challenges?order=recent&languages=oracle">
-                <li>모든 문제</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn/challenges/training?order=acceptance_desc">
-                <li>기초 문제</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn/challenges/beginner?order=acceptance_desc">
-                <li>입문 문제</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit">
-                <li>알고리즘 고득점Kit</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn/challenges?tab=sql_practice_kit">
-                <li>SQL 고득점Kit</li>
-              </a>
-              <a href="https://school.programmers.co.kr/skill_check_assignments">
-                <li>과제테스트</li>
-              </a>
-              <a href="https://school.programmers.co.kr/learn/challenges/questions">
-                <li>Q&A</li>
-              </a>
-            </ul>
-            </li>
-            <a href="https://school.programmers.co.kr/skill_checks">
-              <li>스킬체크</li>
-            </a>
-            <a href="https://community.programmers.co.kr/lounge/1">
-              <li>개발자 라운지</li>
-            </a>
-          </ul>
-        </ul>
-      </div>
-      <div class="dropbox-key4">
-        <ul>
-          <a href="https://certi.programmers.co.kr/">
-            <li>인증 시험</li>
-          </a>
-        </ul>
-      </div>
-      <div class="login-section">
-        <span><a href="https://programmers.co.kr/account/sign_in">로그인</a></span><span><a
-            href="https://business.programmers.co.kr/">기업 서비스</a></span>
-      </div>
+      <div class="dropbox-key">
+        <div class="menubar">
+            <span><a href="https://programmers.co.kr/"><img width="200px" height="50px"
+                src="./programmers_image/programmers-logo-dark.png" alt="CI"></a></span>
+            <a href="https://school.programmers.co.kr/"><p>교육</p></a>
+            <a href="https://career.programmers.co.kr/"><p>채용</p></a>
+            <a href="https://school.programmers.co.kr/learn/challenges"><p>코딩 테스트</p></a>
+            <a href="https://certi.programmers.co.kr/"><p>인증 시험</p></a>
+            <a href="https://programmers.co.kr/account/sign_in"><P>로그인</P></a>
+            <a href="https://business.programmers.co.kr/"><P>기업 서비스</P></a>
+            <div class="dropbox-value1">
+                <div>
+                    <ul>
+                        <a href="https://school.programmers.co.kr/"><li>교육 홈</li></a>
+                        <li>
+                            <a href="https://school.programmers.co.kr/learn">강의</a>
+                            <ul>
+                                <a href="https://school.programmers.co.kr/learn?tag=%EC%A0%84%EC%B2%B4"><li>전체</li></a>
+                                <a href="https://school.programmers.co.kr/learn?tag=%EC%B6%94%EC%B2%9C%20%EA%B0%95%EC%9D%98"><li>추천 강의</li></a>
+                                <a href="https://school.programmers.co.kr/learn?tag=%EB%8D%B0%EB%B8%8C%EC%BD%94%EC%8A%A4"><li>데브코스</li></a>
+                                <a href="https://school.programmers.co.kr/learn?tag=%EC%98%81%EC%83%81/%EC%8B%A4%EC%8A%B5%20%EA%B0%95%EC%9D%98"><li>영상/실습 강의</li></a>
+                                <a href="https://school.programmers.co.kr/learn?tag=PCCP.E%20%EC%9E%90%EA%B2%A9%EC%A6%9D"><li>PCCP.E 자격증</li></a>
+                                <a href="https://school.programmers.co.kr/learn?tag=%EC%84%B8%EB%AF%B8%EB%82%98"><li>세미나</li></a>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            국비지원
+                            <ul>
+                                <li>데브코스</li>
+                            </ul>
+                        </li>
+                        <li>
+                            MY 스쿨
+                            <ul>
+                                <li>수강 중인 코스</li>
+                                <li>관리 중인 코스</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            강사 신청
+                            <ul>
+                                <li>강사/멘토풀 등록</li>
+                            </ul>
+                        </li>
+                        <li>캠퍼스</li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="dropbox-value2">
+                <div>
+                    <ul>
+                        <li>채용 홈</li>
+                        <li>
+                            채용 공고
+                            <ul>
+                                <li>채용 공고</li>
+                                <li>받은 제안</li>
+                                <li>지원한 포지션</li>
+                                <li>북마크한 포지션</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>채용 프로그램</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>탑프로그래머스</li>
+                        <li>이력서</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="dropbox-value3">
+                <div>
+                    <ul>
+                        <li>코딩테스트 문제</li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>스킬체크</li>
+                        <li>개발자 라운지</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="dropbox-value1">
+            <div>
+                <ul>
+                    <li>교육 홈</li>
+                    <li>
+                        강의
+                        <ul>
+                            <li>전체</li>
+                            <li>추천 강의</li>
+                            <li>데브코스</li>
+                            <li>영상/실습 강의</li>
+                            <li>PCCP.E 자격증</li>
+                            <li>세미나</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        국비지원
+                        <ul>
+                            <li>데브코스</li>
+                        </ul>
+                    </li>
+                    <li>
+                        MY 스쿨
+                        <ul>
+                            <li>수강 중인 코스</li>
+                            <li>관리 중인 코스</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        강사 신청
+                        <ul>
+                            <li>강사/멘토풀 등록</li>
+                        </ul>
+                    </li>
+                    <li>캠퍼스</li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="dropbox-value2">
+            <div>
+                <ul>
+                    <li>채용 홈</li>
+                    <li>
+                        채용 공고
+                        <ul>
+                            <li>채용 공고</li>
+                            <li>받은 제안</li>
+                            <li>지원한 포지션</li>
+                            <li>북마크한 포지션</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>채용 프로그램</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>탑프로그래머스</li>
+                    <li>이력서</li>
+                </ul>
+            </div>
+        </div>
+        <div class="dropbox-value3">
+            <div>
+                <ul>
+                    <li>코딩테스트 문제</li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li>스킬체크</li>
+                    <li>개발자 라운지</li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
     </header>
   </div>
   <article>
